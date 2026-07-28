@@ -1,31 +1,60 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>VERDANT LUXE</title>
+<title>VERDANT LUXE | Luxury Plant-Powered Skincare</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
-body { margin:0; background:#fdfbf7; text-align:center; font-family:Georgia, serif; color:#1a3320; }
-.hero { padding:60px 20px; }
-.hero img { width:320px; max-width:85%; border-radius:10px; }
-h1 { font-size:42px; letter-spacing:4px; margin:20px 0 5px; font-weight:300; }
-.tagline { color:#b89d5a; font-style:italic; letter-spacing:2px; font-size:18px; }
-p { max-width:600px; margin:20px auto; line-height:1.7; color:#5a6b5e; font-size:18px; }
-.btn { display:inline-block; margin-top:25px; padding:14px 35px; background:#1a3320; color:white; text-decoration:none; letter-spacing:2px; }
-.products { display:flex; justify-content:center; gap:25px; flex-wrap:wrap; padding:50px 20px; background:white; margin-top:40px; }
-.card { width:240px; border:1px solid #eee; padding:25px; }
+body{margin:0;background:#fdfbf7;font-family:Georgia,serif;color:#1a3320;text-align:center}
+.hero{padding:40px 20px 30px}
+.hero img.logo{width:280px;max-width:80%;border-radius:12px;box-shadow:0 10px 30px rgba(0,0,0,0.08)}
+h1{font-size:42px;letter-spacing:5px;margin:20px 0 5px;font-weight:300}
+.tagline{color:#b89d5a;font-style:italic;letter-spacing:2px;font-size:18px;margin-bottom:15px}
+.hero p{max-width:600px;margin:15px auto;line-height:1.7;color:#5a6b5e;font-size:18px}
+.products{display:flex;justify-content:center;gap:30px;flex-wrap:wrap;padding:50px 20px;background:white}
+.card{width:280px;background:#fdfbf7;border:1px solid #eee;border-radius:16px;padding:0 0 25px;overflow:hidden;box-shadow:0 8px 25px rgba(0,0,0,0.05)}
+.card img{width:100%;height:280px;object-fit:cover}
+.card h3{margin:15px 0 5px;font-size:20px}
+.card .desc{color:#7a8a7e;font-size:14px;margin:5px 15px}
+.card .price{font-size:22px;color:#1a3320;font-weight:bold;margin:10px 0}
+.btn{display:inline-block;padding:12px 28px;background:#1a3320;color:white;text-decoration:none;letter-spacing:1px;border-radius:30px;font-size:14px;margin-top:8px}
+.btn:hover{background:#2a4a2e}
+.footer{padding:30px;background:#1a3320;color:#d9c7a5;margin-top:40px;font-size:14px}
 </style>
 </head>
 <body>
 <div class="hero">
-<img src="verdant luxe.jpeg" alt="Verdant Luxe">
+<img class="logo" src="verdant luxe.jpeg" alt="Verdant Luxe">
 <h1>VERDANT LUXE</h1>
 <div class="tagline">Where Nature Meets Radiance</div>
 <p>Luxury plant-powered skincare rituals, rooted in nature and crafted for your luminous glow.</p>
-<a class="btn" href="#">SHOP COLLECTION</a>
 </div>
+
 <div class="products">
-<div class="card"><h3>Botanical Serum</h3><p>Deep hydration</p></div>
-<div class="card"><h3>Radiance Oil</h3><p>Golden glow</p></div>
-<div class="card"><h3>Luxe Cream</h3><p>Natural nourish</p></div>
+<div class="card">
+<img src="serum.jpg" onerror="this.src='verdant_luxe_serum_editorial.webp'" alt="Botanical Glow Serum">
+<h3>Botanical Glow Serum</h3>
+<p class="desc">30ml | Vitamin C • Plant-Based • Antioxidant</p>
+<div class="price">$48</div>
+<a class="btn" href="#">ADD TO CART</a>
 </div>
+
+<div class="card">
+<img src="oil.jpg" onerror="this.src='verdant_luxe_face_oil.webp'" alt="Radiance Face Oil">
+<h3>Radiance Face Oil</h3>
+<p class="desc">30ml | Squalane • Vitamin E • Organic</p>
+<div class="price">$52</div>
+<a class="btn" href="#">ADD TO CART</a>
+</div>
+
+<div class="card">
+<img src="cream.jpg" onerror="this.src='verdant_luxe_cream.webp'" alt="Luxe Nourishing Cream">
+<h3>Luxe Nourishing Cream</h3>
+<p class="desc">50ml | Hydrating • Nourishing • Daily Glow</p>
+<div class="price">$68</div>
+<a class="btn" href="#">ADD TO CART</a>
+</div>
+</div>
+
+<div class="footer">© 2026 VERDANT LUXE • Natural • Vegan • Cruelty-Free • Made with Love in Florida</div>
 </body>
 </html>
