@@ -1,128 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>VERDANT LUXE | Luxury Mobile Facialist Sarasota FL | Born in Monroe LA</title>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>VERDANT LUXE | Monica Ann Williams</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
 <style>
-:root{--green:#1a3c34;--gold:#c9a86a;--cream:#fdfbf7;--sand:#f9f6f0}
-body{margin:0;font-family:Montserrat,sans-serif;background:var(--cream);color:#1a1a1a;line-height:1.6}
-.bar{background:var(--green);color:#e8dcc6;text-align:center;padding:12px;font-size:11px;letter-spacing:2.5px}
-nav{padding:18px 6%;display:flex;justify-content:space-between;align-items:center;position:sticky;top:0;background:rgba(253,251,247,0.92);backdrop-filter:blur(10px);z-index:20;border-bottom:1px solid #eee}
-.logo{font-family:Playfair Display,serif;font-weight:700;letter-spacing:5px;font-size:26px}
-.hero{min-height:88vh;background:linear-gradient(rgba(26,60,52,0.55),rgba(26,60,52,0.55)),url('glow%20serum.jpeg');background-size:cover;background-position:center;display:flex;flex-direction:column;justify-content:center;align-items:center;color:white;text-align:center;padding:30px 20px}
-.hero h1{font-family:Playfair Display,serif;font-size:72px;letter-spacing:12px;margin:0;line-height:1}
-.hero p.sub{font-size:14px;letter-spacing:4px;margin:18px 0 8px;opacity:0.95}
-.hero p.desc{max-width:640px;margin:18px 0 28px;font-weight:300;font-size:16px}
-.btn{background:var(--gold);color:white;padding:16px 32px;text-decoration:none;font-weight:700;letter-spacing:1.5px;display:inline-block;margin:6px;border:2px solid var(--gold);transition:.3s;font-size:12px}
-.btn:hover{background:transparent;color:var(--gold);background:white}
-.btn-dark{background:var(--green);border-color:var(--green)} .btn-dark:hover{background:white;color:var(--green)}
-.btn-outline{background:transparent;border-color:white;color:white} .btn-outline:hover{background:white;color:var(--green)}
-.section{padding:70px 6%} .pill{display:inline-block;background:#f0ebe1;color:var(--green);padding:8px 18px;font-size:11px;letter-spacing:2.5px;margin-bottom:16px;font-weight:600}
-.h2{font-family:Playfair Display,serif;font-size:38px;margin:0 0 12px;letter-spacing:1px}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:28px;margin-top:30px}
-.card{background:white;border:1px solid #eee;text-align:center;position:relative;overflow:hidden;transition:.3s} .card:hover{transform:translateY(-4px);box-shadow:0 12px 30px rgba(0,0,0,.08)}
-.card img{width:100%;height:300px;object-fit:cover} .card div{padding:22px}
-.price{color:var(--green);font-weight:800;font-size:22px;font-family:Playfair Display} .old{color:#999;text-decoration:line-through;font-size:14px;margin-right:8px;font-weight:400}
-.badge{position:absolute;top:14px;left:14px;background:var(--gold);color:white;padding:6px 12px;font-size:10px;letter-spacing:1.5px;font-weight:700;z-index:2}
-.kit{border:1.5px solid var(--gold)}
-.founder{background:var(--sand);display:grid;grid-template-columns:1fr 1.2fr;gap:50px;align-items:center}
-.founder-img{width:100%;height:520px;background:linear-gradient(#e8dcc6,#f0ebe1);display:flex;align-items:center;justify-content:center;color:var(--green);font-family:Playfair Display;font-size:18px;letter-spacing:2px}
-.review{background:white;border:1px solid #eee;padding:28px;text-align:left}
-.stars{color:var(--gold);letter-spacing:2px;margin-bottom:10px}
-.contact{display:grid;grid-template-columns:1fr 1fr;gap:28px} .box{background:white;border:1px solid #e8dcc6;padding:36px;text-align:center}
-.footer{background:var(--green);color:#e8dcc6;padding:60px 6%;text-align:center}
-@media(max-width:800px){.hero h1{font-size:42px;letter-spacing:6px}.founder{grid-template-columns:1fr}.contact{grid-template-columns:1fr}.h2{font-size:28px}}
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:#f9f6f0;color:#1a1a1a;font-family:'Montserrat',sans-serif}
+.top-bar{background:#1a3c34;color:#f9f6f0;text-align:center;padding:12px;font-size:11px;letter-spacing:3px}
+.hero{height:82vh;background:linear-gradient(rgba(26,60,52,0.45),rgba(26,60,52,0.55)),url('ceo.jpg');background-size:cover;background-position:center top;display:flex;align-items:center;justify-content:center;text-align:center;color:white}
+.hero h1{font-family:'Playfair Display',serif;font-size:64px;letter-spacing:14px;line-height:0.9}
+.hero p{letter-spacing:5px;font-size:12px;margin:12px 0}
+.section{max-width:1150px;margin:0 auto;padding:70px 20px;text-align:center}
+.pill{background:#1a3c34;color:#f9f6f0;padding:8px 18px;font-size:11px;letter-spacing:3px;display:inline-block;margin-bottom:18px}
+.founder-wrap{display:flex;gap:50px;align-items:center;justify-content:center;flex-wrap:wrap;text-align:left;margin-top:35px}
+.founder-wrap img{width:360px;height:360px;border-radius:50%;object-fit:cover;border:5px solid #c9a86a;display:block}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:24px;margin-top:35px}
+.card{background:white;overflow:hidden;box-shadow:0 6px 24px rgba(0,0,0,0.06)}
+.card img{width:100%;height:300px;object-fit:cover;display:block}
+.card-body{padding:20px}
+.card-body h3{font-family:'Playfair Display',serif;font-size:20px;margin-bottom:6px}
+.price{color:#c9a86a;font-weight:700;letter-spacing:1px}
+.footer{background:#1a3c34;color:#f9f6f0;text-align:center;padding:40px 20px;font-size:13px;letter-spacing:1px;line-height:1.8}
+@media(max-width:700px){.hero h1{font-size:42px;letter-spacing:8px}.founder-wrap{text-align:center}}
 </style>
 </head>
 <body>
-<div class="bar">SARASOTA MOBILE BOOKINGS OPEN THIS WEEKEND • BORN IN MONROE, LA • FLAGSHIP: 190 MARONEY ST, MARION LA 71260</div>
-<nav><div class="logo">VERDANT LUXE</div><div style="font-size:11px;letter-spacing:3px;font-weight:600">SARASOTA • MONROE</div></nav>
+
+<div class="top-bar">4297 EXPRESS LANE SARASOTA FL • 941-326-2501 • FREE SHIPPING OVER $75</div>
 
 <div class="hero">
-<div class="pill" style="background:rgba(232,220,198,0.95)">EST. MONROE, LA — NOW GLOWING IN SARASOTA, FL</div>
+<div>
+<p>MONROE, LA → SARASOTA, FL</p>
 <h1>VERDANT<br>LUXE</h1>
-<p class="sub">MOBILE FACIALIST & BOTANICAL RITUALS</p>
-<p class="desc">Southern-rooted, plant-powered luxury. Founder-owned flagship in Louisiana, now I come to you in Sarasota — Siesta Key, Lakewood Ranch, Downtown.</p>
-<div>
-<a class="btn" href="https://wa.me/19542589063?text=Hi%20Verdant%20Luxe!%20Book%20my%20mobile%20facial%20in%20Sarasota%20this%20weekend">BOOK SARASOTA — (954) 258-9063</a>
-<a class="btn btn-outline" href="#kits">SHOP RITUAL KITS</a>
-</div>
-<p style="font-size:12px;margin-top:18px;letter-spacing:1px;opacity:0.9">Weekend + Evening Mobile Appointments • 100% Vegan • Cruelty-Free</p>
-</div>
-
-<div class="section" id="kits" style="background:var(--sand)">
-<div class="pill">BEST VALUE — SARASOTA CLIENT FAVORITE</div>
-<div class="h2">Ritual Kits — Save + Glow</div>
-<p>Smart Sarasota clients don't buy one product — they buy the ritual. Higher glow, better value.</p>
-<div class="grid">
-<div class="card kit"><span class="badge">BEST SELLER</span><div><h3 style="font-family:Playfair Display">Glow Ritual Kit</h3><p style="font-size:13px">Serum ($58) + Cream ($68) = $126 value</p><p class="price"><span class="old">$126</span>$115</p><p style="font-size:12px;color:#666">Most booked after facial • Free delivery in Sarasota</p><br><a class="btn" href="https://wa.me/19542589063?text=Hi!%20I%20want%20Glow%20Ritual%20Kit%20$115%20Sarasota">ORDER KIT — $115</a></div></div>
-<div class="card kit"><div><h3 style="font-family:Playfair Display">Body Ritual Kit</h3><p style="font-size:13px">Scrub ($52) + Lotion ($46) = $98 value</p><p class="price"><span class="old">$98</span>$88</p><p style="font-size:12px;color:#666">Ships from 190 Maroney St, Marion LA</p><br><a class="btn" href="https://wa.me/13186087258?text=Body%20Ritual%20Kit%20$88">ORDER KIT — $88</a></div></div>
-<div class="card kit" style="border-width:2px"><span class="badge" style="background:var(--green)">LUXE • FREE SHIPPING</span><div><h3 style="font-family:Playfair Display">Full Verdant Ritual</h3><p style="font-size:13px">All 6 products • Complete home spa</p><p class="price"><span class="old">$310</span>$250</p><p style="font-size:12px;color:#666">Founder's full routine • Best transformation</p><br><a class="btn btn-dark" href="https://wa.me/13186087258?text=Full%20Verdant%20Ritual%20$250%20-%20ship%20to%20me">ORDER FULL — $250</a></div></div>
+<p style="font-weight:700;margin-top:15px">MONICA ANN WILLIAMS • CEO • I OWN MY BRAND</p>
 </div>
 </div>
 
 <div class="section">
-<div class="pill">SHOP — SHIPS FROM MONROE FLAGSHIP</div>
-<div class="h2">Botanical Rituals</div>
+<div class="pill">MEET THE FOUNDER</div>
+<h2 style="font-family:'Playfair Display',serif;font-size:42px">Monica Ann Williams</h2>
+<div class="founder-wrap">
+<img src="ceo.jpg" alt="Monica Ann Williams CEO">
+<div style="max-width:480px">
+<p style="color:#c9a86a;font-weight:700;letter-spacing:3px;font-size:12px">FOUNDER & CEO • LICENSED THERAPIST</p>
+<p style="line-height:1.9;color:#555;margin-top:12px">Born in Monroe, Louisiana. Now building Verdant Luxe in Sarasota, Florida. Every ritual is plant-powered, intentional, and made with care. I own my brand, my formula, and my future.</p>
+<p style="font-weight:700;margin-top:20px;letter-spacing:2px;font-size:13px">4297 EXPRESS LANE • SARASOTA FL 34233</p>
+</div>
+</div>
+</div>
+
+<div class="section" style="background:white;max-width:100%;border-top:1px solid #ece6da;border-bottom:1px solid #ece6da">
+<div style="max-width:1150px;margin:0 auto">
+<div class="pill">SHOP THE RITUALS</div>
+<h2 style="font-family:'Playfair Display',serif;font-size:40px">Plant-Powered Luxury</h2>
 <div class="grid">
-<div class="card"><img src="glow%20serum.jpeg"><div><h4>Botanical Glow Serum</h4><p class="price"><span class="old">$48</span>$58</p><a class="btn" href="https://wa.me/19542589063?text=Order%20Glow%20Serum%20$58">ORDER — $58</a></div></div>
-<div class="card"><img src="glow%20face%20cream.jpeg"><div><h4>Glow Face Cream</h4><p class="price"><span class="old">$52</span>$68</p><a class="btn" href="https://wa.me/19542589063?text=Order%20Glow%20Cream%20$68">ORDER — $68</a></div></div>
-<div class="card"><img src="botanical%20scrub.jpeg"><div><h4>Botanical Scrub</h4><p class="price"><span class="old">$42</span>$52</p><a class="btn" href="https://wa.me/13186087258?text=Order%20Scrub%20$52">ORDER — $52</a></div></div>
-<div class="card"><img src="groove%20body%20lotion.jpeg"><div><h4>Body Lotion</h4><p class="price"><span class="old">$36</span>$46</p><a class="btn" href="https://wa.me/13186087258?text=Order%20Lotion%20$46">ORDER — $46</a></div></div>
-<div class="card"><img src="herbal%20conditioner.jpeg"><div><h4>Herbal Conditioner</h4><p class="price"><span class="old">$34</span>$44</p><a class="btn" href="https://wa.me/13186087258?text=Order%20Conditioner%20$44">ORDER — $44</a></div></div>
-<div class="card"><img src="shampoo.jpeg"><div><h4>Herbal Shampoo</h4><p class="price"><span class="old">$32</span>$42</p><a class="btn" href="https://wa.me/13186087258?text=Order%20Shampoo%20$42">ORDER — $42</a></div></div>
+<div class="card"><img src="botanical-scrub.jpeg"><div class="card-body"><h3>Botanical Scrub</h3><p class="price">$68</p></div></div>
+<div class="card"><img src="glow-face-cream.jpeg"><div class="card-body"><h3>Glow Face Cream</h3><p class="price">$85</p></div></div>
+<div class="card"><img src="glow-serum.jpeg"><div class="card-body"><h3>Glow Serum</h3><p class="price">$85</p></div></div>
+<div class="card"><img src="groove-body-lotion.jpeg"><div class="card-body"><h3>Groove Body Lotion</h3><p class="price">$72</p></div></div>
+<div class="card"><img src="herbal-conditioner.jpeg"><div class="card-body"><h3>Herbal Conditioner</h3><p class="price">$62</p></div></div>
+<div class="card"><img src="shampoo.jpeg"><div class="card-body"><h3>Luxe Shampoo</h3><p class="price">$62</p></div></div>
 </div>
-</div>
-
-<div class="section founder">
-<div class="founder-img">ADD YOUR PHOTO HERE<br><span style="font-size:12px;font-family:Montserrat">Replace with your founder photo</span></div>
-<div>
-<div class="pill">MEET THE FOUNDER — I OWN MY BRAND</div>
-<div class="h2">Born in Monroe,<br>Blooming in Sarasota</div>
-<p>I'm not just a therapist — I'm a founder. I started VERDANT LUXE with one shop at <b>190 Maroney St, Marion, LA 71260</b>, mixing botanical rituals for women who wanted luxury without chemicals.</p>
-<p>Now I'm building in Sarasota, Florida while working — because dreams need funding. I bring my Louisiana glow to your doorstep in Siesta Key, Lakewood Ranch, and Downtown Sarasota.</p>
-<p><b>Why mobile?</b> Because busy women, moms, and executives deserve luxury without driving.</p>
-<br>
-<div style="display:flex;gap:10px;flex-wrap:wrap">
-<a class="btn" href="https://wa.me/19542589063">WHATSAPP SARASOTA</a>
-<a class="btn btn-dark" href="https://wa.me/13186087258">SHOP MONROE</a>
-</div>
-</div>
-</div>
-
-<div class="section" style="background:var(--sand)">
-<div class="pill">SARASOTA SIGNATURE — MOBILE</div>
-<div class="h2">Mobile Facials — I Come To You</div>
-<div class="grid">
-<div class="card"><div><h3>Verdant Glow — 75min</h3><p style="font-size:13px">Deep cleanse + serum infusion + gua sha sculpt</p><p class="price">$125</p><a class="btn" href="https://wa.me/19542589063?text=Book%20Glow%20Facial%20$125%20Sarasota">BOOK $125</a></div></div>
-<div class="card"><div><h3>Detox Clarifying — 60min</h3><p style="font-size:13px">For acne, humidity, Florida congestion</p><p class="price">$115</p><a class="btn" href="https://wa.me/19542589063?text=Book%20Detox%20$115">BOOK $115</a></div></div>
-<div class="card" style="border:2px solid var(--green)"><span class="badge" style="background:var(--green)">MOST LOVED</span><div><h3>Anti-Aging Botanical — 90min</h3><p style="font-size:13px">Lift + firm + botanical peptides</p><p class="price">$150</p><a class="btn btn-dark" href="https://wa.me/19542589063?text=Book%20Anti-Aging%20$150%20Sarasota">BOOK $150</a></div></div>
-</div>
-</div>
-
-<div class="section">
-<div class="pill">WHAT SARASOTA CLIENTS SAY</div>
-<div class="h2">Glow Stories</div>
-<div class="grid">
-<div class="review"><div class="stars">★★★★★</div><p>"Best facial I've had in Sarasota and she came to my condo in Siesta Key. My skin is glowing for days!"</p><p style="font-weight:700;margin-top:12px;font-size:13px">— Jennifer, Siesta Key</p></div>
-<div class="review"><div class="stars">★★★★★</div><p>"The Glow Kit is worth every penny. $115 and my dark spots are fading. Ships fast from Louisiana."</p><p style="font-weight:700;margin-top:12px;font-size:13px">— Ashley, Lakewood Ranch</p></div>
-<div class="review"><div class="stars">★★★★★</div><p>"Finally a Black-owned luxury brand that understands my skin. Monroe roots, Sarasota luxury!"</p><p style="font-weight:700;margin-top:12px;font-size:13px">— Tiana, Downtown Sarasota</p></div>
-</div>
-</div>
-
-<div class="section" style="padding-top:0">
-<div class="contact">
-<div class="box"><h3 style="font-family:Playfair Display">📍 SARASOTA, FL — MOBILE</h3><p><b>Service Area:</b> Sarasota, Siesta Key, Lakewood Ranch, Palmer Ranch<br>Weekends + Evenings • I Come To You</p><br><a class="btn" href="https://wa.me/19542589063">WHATSAPP (954) 258-9063</a><p style="margin-top:12px"><a href="tel:19542589063">(954) 258-9063</a></p></div>
-<div class="box"><h3 style="font-family:Playfair Display">📍 MONROE FLAGSHIP SHOP</h3><p><b>190 Maroney St, Marion, LA 71260</b><br>Products In-Stock • Pickup & Nationwide Shipping</p><br><a class="btn btn-dark" href="https://wa.me/13186087258">WHATSAPP SHOP (318) 608-7258</a><p style="margin-top:12px"><a href="tel:13186087258">(318) 608-7258</a></p></div>
 </div>
 </div>
 
 <div class="footer">
-<div class="logo" style="font-size:28px;margin-bottom:14px">VERDANT LUXE</div>
-<p style="max-width:700px;margin:0 auto 18px;font-weight:300">Born in Monroe, Louisiana — Blooming in Sarasota, Florida. Founder-owned, plant-powered, 100% vegan and cruelty-free.</p>
-<p>📧 hello@verdantluxe.com | Sarasota Mobile: (954) 258-9063 | Monroe Shop: (318) 608-7258<br>190 Maroney St, Marion, LA 71260</p>
-<p style="margin-top:18px;font-size:11px;letter-spacing:2px;opacity:0.7">© 2026 VERDANT LUXE — OWN YOUR GLOW</p>
+© 2026 VERDANT LUXE • MONICA ANN WILLIAMS • BORN IN MONROE, LA • BUILT IN SARASOTA, FL<br>
+4297 EXPRESS LANE SARASOTA FL 34233 • 941-326-2501 • I OWN MY BRAND
 </div>
+
 </body>
 </html>
