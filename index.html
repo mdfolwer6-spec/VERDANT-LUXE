@@ -1,48 +1,113 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+<meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>VERDANT LUXE | Luxury Botanical Rituals</title>
+<title>VERDANT LUXE | Luxury Botanical Rituals - Plant-Powered Skincare</title>
+<link rel="icon" href="verdant%20luxe.jpeg">
 <style>
-body{margin:0;font-family:Georgia,serif;background:#fdfbf7;color:#2d2d2d;text-align:center}
-header{padding:40px;background:#f5f1e8}
-h1{letter-spacing:4px;margin:15px 0 5px}
-.cat{font-size:26px;margin:50px 0 10px;color:#1e3a2f;letter-spacing:2px}
-.products{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:30px;padding:20px 40px;max-width:1200px;margin:auto}
-.card{background:white;border-radius:20px;overflow:hidden;box-shadow:0 10px 30px rgba(0,0,0,0.07);padding-bottom:20px}
-.card img{width:100%;height:300px;object-fit:cover}
-.price{font-weight:bold;color:#6b7d5e;font-size:20px;margin:10px 0}
-.btn{background:#2d2d2d;color:#fff;padding:12px 28px;text-decoration:none;border-radius:30px;display:inline-block;margin-top:10px}
-footer{padding:40px;color:#999;background:#1e3a2f;margin-top:60px}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Georgia',serif;background:#fdfbf7;color:#1a1a1a;line-height:1.6}
+a{text-decoration:none;color:inherit}
+/* NAV */
+nav{display:flex;justify-content:space-between;align-items:center;padding:18px 40px;background:#fff;position:sticky;top:0;z-index:100;box-shadow:0 2px 15px rgba(0,0,0,0.05)}
+nav .logo{font-weight:bold;letter-spacing:4px;font-size:18px}
+nav .menu a{margin-left:25px;font-size:13px;letter-spacing:1.5px;text-transform:uppercase;color:#555}
+nav .menu a:hover{color:#1e3a2f}
+/* HERO */
+.hero{background:linear-gradient(rgba(245,241,232,0.85),rgba(245,241,232,0.85)),url('verdant%20luxe.jpeg');background-size:200px;background-repeat:no-repeat;background-position:center 20%;padding:90px 20px 60px;text-align:center}
+.hero h1{font-size:52px;letter-spacing:8px;font-weight:400;margin-bottom:10px}
+.hero p{max-width:600px;margin:15px auto;color:#555;font-size:18px}
+.hero .btn-hero{background:#1e3a2f;color:#fff;padding:14px 36px;border-radius:30px;display:inline-block;margin-top:20px;letter-spacing:2px;font-size:13px}
+.trust{display:flex;justify-content:center;gap:30px;padding:18px;background:#1e3a2f;color:#e8e3d5;font-size:11px;letter-spacing:2px;flex-wrap:wrap}
+/* CATEGORY */
+.cat{font-size:24px;margin:70px 0 10px;color:#1e3a2f;letter-spacing:4px;text-transform:uppercase;text-align:center}
+.cat-sub{text-align:center;color:#999;font-size:13px;margin-bottom:30px;letter-spacing:1px}
+.products{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:30px;padding:20px 40px;max-width:1280px;margin:auto}
+.card{background:#fff;border-radius:18px;overflow:hidden;box-shadow:0 10px 40px rgba(0,0,0,0.06);transition:0.3s;padding-bottom:22px;text-align:center}
+.card:hover{transform:translateY(-6px);box-shadow:0 18px 50px rgba(0,0,0,0.12)}
+.card img{width:100%;height:340px;object-fit:cover}
+.card h3{margin:16px 0 4px;font-size:18px;letter-spacing:0.5px}
+.card .desc{color:#888;font-size:13px;margin:0 15px;min-height:20px}
+.price{font-weight:bold;color:#1e3a2f;font-size:20px;margin:12px 0}
+.btn{background:#1a1a1a;color:#fff;padding:11px 28px;border-radius:30px;display:inline-block;font-size:12px;letter-spacing:1.5px}
+.btn:hover{background:#1e3a2f}
+/* REVIEWS */
+.reviews{background:#fff;padding:70px 30px;margin-top:80px;text-align:center}
+.review-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:30px;max-width:1100px;margin:30px auto 0}
+.review{background:#fdfbf7;padding:28px;border-radius:16px}
+.stars{color:#d4a76a;letter-spacing:2px}
+/* FOOTER */
+footer{background:#1e3a2f;color:#c9c5b8;padding:60px 30px;text-align:center;margin-top:0}
+footer a{color:#e8e3d5;text-decoration:underline}
+.newsletter input{padding:12px 18px;border-radius:30px;border:none;width:260px;margin-top:15px}
+.newsletter button{padding:12px 24px;border-radius:30px;border:none;background:#d4a76a;color:#1e3a2f;margin-left:8px;font-weight:bold}
 </style>
 </head>
 <body>
-<header>
+
+<nav>
+<div class="logo">VERDANT LUXE</div>
+<div class="menu">
+<a href="#face">Face</a>
+<a href="#hair">Hair</a>
+<a href="#body">Body</a>
+<a href="https://wa.me/1YOURNUMBER?text=Hi%20VERDANT%20LUXE!%20I%20want%20to%20shop" target="_blank">Contact</a>
+</div>
+</nav>
+
+<div class="hero">
 <h1>VERDANT LUXE</h1>
-<p>Luxury Plant-Powered Rituals • 9 Products</p>
-</header>
-
-<h2 class="cat">FACE RITUALS</h2>
-<div class="products">
-<div class="card"><img src="botanical%20glow%20serum.jpeg"><h3>Botanical Glow Serum</h3><div class="price">$48</div><a class="btn" href="#">ADD TO CART</a></div>
-<div class="card"><img src="radiance%20face%20oil.jpeg"><h3>Radiance Face Oil</h3><div class="price">$52</div><a class="btn" href="#">ADD TO CART</a></div>
-<div class="card"><img src="luxe%20nourishing%20cream.jpeg"><h3>Luxe Nourishing Cream</h3><div class="price">$68</div><a class="btn" href="#">ADD TO CART</a></div>
-<div class="card"><img src="face%20bar%20soap.jpeg"><h3>Luxe Face Bar Soap</h3><div class="price">$22</div><a class="btn" href="#">ADD TO CART</a></div>
-<div class="card"><img src="dry%20lips.jpeg"><h3>Dry Lips Repair Cream</h3><div class="price">$16</div><a class="btn" href="#">ADD TO CART</a></div>
+<p>Luxury Plant-Powered Rituals crafted in Florida. 100% Vegan, Cruelty-Free, and infused with botanicals for your natural glow.</p>
+<a class="btn-hero" href="#face">SHOP COLLECTION</a>
 </div>
 
-<h2 class="cat">HAIR RITUALS</h2>
-<div class="products">
-<div class="card"><img src="hair%20growth.jpeg"><h3>Herbal Hair Growth Cream</h3><div class="price">$45</div><a class="btn" href="#">ADD TO CART</a></div>
+<div class="trust">
+<span>🌿 100% VEGAN</span><span>🐰 CRUELTY-FREE</span><span>✨ NATURAL INGREDIENTS</span><span>📦 FREE SHIPPING OVER $50</span>
 </div>
 
-<h2 class="cat">BODY RITUALS</h2>
+<h2 class="cat" id="face">Face Rituals</h2>
+<p class="cat-sub">Brighten • Nourish • Repair</p>
 <div class="products">
-<div class="card"><img src="bar%20soap.jpeg"><h3>Botanical Bath Soap</h3><div class="price">$18</div><a class="btn" href="#">ADD TO CART</a></div>
-<div class="card"><img src="shower%20gel.jpeg"><h3>Botanical Shower Gel</h3><div class="price">$32</div><a class="btn" href="#">ADD TO CART</a></div>
-<div class="card"><img src="body%20scrb.jpeg"><h3>Botanical Body Scrub</h3><div class="price">$38</div><a class="btn" href="#">ADD TO CART</a></div>
+<div class="card"><img src="botanical%20glow%20serum.jpeg"><h3>Botanical Glow Serum</h3><p class="desc">Vitamin C + Brightening • 30ml</p><div class="price">$48</div><a class="btn" href="https://wa.me/1YOURNUMBER?text=I%20want%20Botanical%20Glow%20Serum%20$48" target="_blank">ADD TO CART</a></div>
+<div class="card"><img src="radiance%20face%20oil.jpeg"><h3>Radiance Face Oil</h3><p class="desc">24k Plant Oils • Deep Glow • 30ml</p><div class="price">$52</div><a class="btn" href="https://wa.me/1YOURNUMBER?text=I%20want%20Radiance%20Face%20Oil%20$52" target="_blank">ADD TO CART</a></div>
+<div class="card"><img src="luxe%20nourishing%20cream.jpeg"><h3>Luxe Nourishing Cream</h3><p class="desc">Overnight Repair • Hydration • 50g</p><div class="price">$68</div><a class="btn" href="https://wa.me/1YOURNUMBER?text=I%20want%20Luxe%20Nourishing%20Cream%20$68" target="_blank">ADD TO CART</a></div>
+<div class="card"><img src="face%20bar%20soap.jpeg"><h3>Luxe Face Bar Soap</h3><p class="desc">Gentle • Brightening • Daily Cleanse</p><div class="price">$22</div><a class="btn" href="https://wa.me/1YOURNUMBER?text=I%20want%20Luxe%20Face%20Bar%20Soap%20$22" target="_blank">ADD TO CART</a></div>
+<div class="card"><img src="dry%20lips.jpeg"><h3>Dry Lips Repair Cream</h3><p class="desc">Overnight • Hydrating • Soft Lips • 15g</p><div class="price">$16</div><a class="btn" href="https://wa.me/1YOURNUMBER?text=I%20want%20Dry%20Lips%20Repair%20Cream%20$16" target="_blank">ADD TO CART</a></div>
 </div>
 
-<footer>© 2026 VERDANT LUXE • Natural • Vegan • Florida</footer>
+<h2 class="cat" id="hair">Hair Rituals</h2>
+<p class="cat-sub">Strengthen • Grow • Restore</p>
+<div class="products">
+<div class="card"><img src="hair%20growth.jpeg"><h3>Herbal Hair Growth Cream</h3><p class="desc">120ml • Strengthen • Nourish • Grow</p><div class="price">$45</div><a class="btn" href="https://wa.me/1YOURNUMBER?text=I%20want%20Herbal%20Hair%20Growth%20Cream%20$45" target="_blank">ADD TO CART</a></div>
+</div>
+
+<h2 class="cat" id="body">Body Rituals</h2>
+<p class="cat-sub">Cleanse • Exfoliate • Glow</p>
+<div class="products">
+<div class="card"><img src="bar%20soap.jpeg"><h3>Botanical Bath Soap</h3><p class="desc">Natural • Vegan • Detoxifying • 100g</p><div class="price">$18</div><a class="btn" href="https://wa.me/1YOURNUMBER?text=I%20want%20Botanical%20Bath%20Soap%20$18" target="_blank">ADD TO CART</a></div>
+<div class="card"><img src="shower%20gel.jpeg"><h3>Botanical Shower Gel</h3><p class="desc">250ml • Eucalyptus & Mint • Refreshing</p><div class="price">$32</div><a class="btn" href="https://wa.me/1YOURNUMBER?text=I%20want%20Botanical%20Shower%20Gel%20$32" target="_blank">ADD TO CART</a></div>
+<div class="card"><img src="body%20scrb.jpeg"><h3>Botanical Body Scrub</h3><p class="desc">250g • Exfoliating • Glow • Eucalyptus</p><div class="price">$38</div><a class="btn" href="https://wa.me/1YOURNUMBER?text=I%20want%20Botanical%20Body%20Scrub%20$38" target="_blank">ADD TO CART</a></div>
+</div>
+
+<div class="reviews">
+<h2 class="cat" style="margin-top:0">Loved By 2,000+ Customers</h2>
+<div class="review-grid">
+<div class="review"><div class="stars">★★★★★</div><p>"My skin has never glowed like this. The serum is magic!"</p><small>— Sarah J., Orlando</small></div>
+<div class="review"><div class="stars">★★★★★</div><p>"Hair cream actually works! Edges growing back in 3 weeks."</p><small>— Aisha M., Miami</small></div>
+<div class="review"><div class="stars">★★★★★</div><p>"Smells divine. My shower feels like a spa now."</p><small>— Jessica L., Tampa</small></div>
+</div>
+</div>
+
+<footer>
+<h2 style="letter-spacing:5px">VERDANT LUXE</h2>
+<p style="margin:15px 0">Florida • Natural • Vegan • Cruelty-Free<br>Contact: hello@verdantluxe.com | WhatsApp: +1 YOUR NUMBER</p>
+<p>Follow us on Instagram @verdantluxe</p>
+<div class="newsletter">
+<input placeholder="Your email for 10% off"><button>JOIN</button>
+</div>
+<p style="margin-top:30px;font-size:11px;opacity:0.6">© 2026 VERDANT LUXE • All Rights Reserved • Privacy Policy • Shipping & Returns</p>
+</footer>
+
 </body>
 </html>
